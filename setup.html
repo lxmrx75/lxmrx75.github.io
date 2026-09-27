@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Setup guide</title>
+<meta name="description" content="How to set up the big-button phone app so that the big incoming-call screen always appears, also on a locked phone. Steps for Xiaomi, Samsung, Oppo and other brands.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a6a3a'/%3E%3Cpath d='M20 14c3 0 6 7 6 9s-3 3-3 5 6 11 9 13 3-3 5-3 9 3 9 6-4 7-8 7C26 51 13 38 13 22c0-4 4-8 7-8z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fffdf7;--fg:#161616;--muted:#4a4a4a;--card:#f2eee3;--line:#d8d0bc;--link:#0848a0;--accent:#0a6a3a;--accent-fg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f3f3f3;--muted:#c4c4c4;--card:#1d1d1d;--line:#3a3a3a;--link:#9cc9ff;--accent:#3fb872;--accent-fg:#06180d}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.25rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+header{border-bottom:2px solid var(--line);padding:20px 0 12px}
+.brand{margin:0;font-weight:800;font-size:1.15rem;color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:6px;font-size:1.05rem}
+h1{font-size:2rem;line-height:1.2;margin:28px 0 10px}
+h2{font-size:1.5rem;line-height:1.25;margin:40px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+h3{font-size:1.25rem;margin:24px 0 4px}
+a{color:var(--link);text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lead{font-size:1.35rem}
+.muted{color:var(--muted)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:20px 0}
+ul,ol{padding-left:1.4em}li{margin:8px 0}
+b.ui{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:0 6px;font-weight:700}
+.lang-split{margin-top:56px;border-top:4px solid var(--accent)}
+footer{border-top:2px solid var(--line);margin-top:48px;padding:20px 0 40px;font-size:1.05rem;color:var(--muted)}
+@media (max-width:480px){body{font-size:1.15rem}h1{font-size:1.7rem}h2{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <!-- APP NAME: this is the only place on this page. Change the text below to rename. -->
+  <p class="brand" id="app-name">Big &amp; Clear</p>
+  <script>document.title = document.getElementById('app-name').textContent + ' – ' + document.title;</script>
+  <nav aria-label="Site">
+    <a href="index.html">Home</a>
+    <a href="support.html">Help</a>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="#tr" lang="tr">Türkçe</a>
+  </nav>
+</header>
+
+<main>
+<h1>Setup guide</h1>
+<p class="lead">Do this once, preferably together with a family member. It takes about 3 minutes. Afterwards the big incoming-call screen appears every time — also when the phone is locked.</p>
+
+<h2>1. All phones</h2>
+<ol>
+  <li>Open the app. When Android asks for the <b>default phone app</b>, choose this app and tap <b class="ui">Set as default</b>.</li>
+  <li>Answer <b class="ui">Allow</b> to every permission question (phone, contacts, call history, notifications).</li>
+  <li>If the home screen shows a <b>red warning</b> (for example “Incoming calls can’t open full screen — FIX”), tap it and switch the setting on.</li>
+</ol>
+<div class="box">Why? The app replaces the phone’s calling screens. Contacts and call history stay on the phone; the app sends them nowhere (see the <a href="privacy.html">privacy policy</a>).</div>
+
+<h2>2. Xiaomi, Redmi, POCO (MIUI / HyperOS)</h2>
+<p>Xiaomi phones have two extra switches. Without them the incoming-call screen may not appear on a locked phone.</p>
+<ol>
+  <li>Touch and hold the app icon → <b class="ui">App info</b> (ⓘ).</li>
+  <li>Tap <b class="ui">Other permissions</b>.</li>
+  <li><b class="ui">Show on Lock screen</b> → <b>Allow</b>.</li>
+  <li><b class="ui">Display pop-up windows while running in the background</b> → <b>Allow</b>.</li>
+  <li>Recommended: back in App info → <b class="ui">Battery saver</b> → <b>No restrictions</b>.</li>
+</ol>
+
+<h2>3. Samsung (One UI)</h2>
+<ol>
+  <li>Settings → <b class="ui">Apps</b> → this app → <b class="ui">Battery</b> → <b>Unrestricted</b>.</li>
+  <li>Settings → <b class="ui">Apps</b> → this app → <b class="ui">Notifications</b> → make sure they are on.</li>
+</ol>
+
+<h2>4. Oppo, Realme, OnePlus (ColorOS / OxygenOS)</h2>
+<ol>
+  <li>Touch and hold the app icon → <b class="ui">App info</b> → <b class="ui">Battery usage</b> → turn on <b>Allow background activity</b> (and <b>Allow auto launch</b> if shown).</li>
+  <li>App info → <b class="ui">Notifications</b> → turn on, including <b>Lock screen</b> notifications.</li>
+</ol>
+
+<h2>5. Other brands (Vivo, Honor, Motorola, …)</h2>
+<p>Look in the app’s <b class="ui">App info</b> for <b>battery</b> (choose “no restrictions” / “allow background activity”), <b>auto start</b> (on) and <b>lock screen</b> or <b>pop-up</b> permissions (allow). Menu names differ between brands and Android versions.</p>
+
+<h2>6. Test it</h2>
+<p>Lock the phone and ask someone to call you. The big screen with the green <b>ANSWER</b> area should appear. If it does not, see <a href="support.html">Help</a> and use <b>Settings → Report a problem</b> in the app.</p>
+
+<h2>Switching back</h2>
+<p>Settings → <b class="ui">Apps</b> → <b class="ui">Default apps</b> → <b class="ui">Phone app</b> → choose the phone’s original app. Nothing is deleted.</p>
+
+<section class="lang-split" id="tr" lang="tr">
+<h1>Kurulum rehberi</h1>
+<p class="lead">Bunu bir kez, tercihen bir aile üyesiyle birlikte yapın; yaklaşık 3 dakika sürer. Sonrasında büyük gelen arama ekranı her aramada, telefon kilitliyken de çıkar.</p>
+
+<h2>1. Bütün telefonlar</h2>
+<ol>
+  <li>Uygulamayı açın. Android <b>varsayılan telefon uygulamasını</b> sorunca bu uygulamayı seçip <b class="ui">Varsayılan olarak ayarla</b>'ya basın.</li>
+  <li>Bütün izin sorularına <b class="ui">İzin ver</b> deyin (telefon, rehber, arama kaydı, bildirimler).</li>
+  <li>Ana ekranda <b>kırmızı bir uyarı</b> çıkarsa (ör. “Gelen arama tam ekran açılmıyor — DÜZELT”) ona dokunup ayarı açın.</li>
+</ol>
+<div class="box">Neden? Uygulama telefonun arama ekranlarının yerine geçer. Rehber ve arama kaydı telefonda kalır; uygulama bunları hiçbir yere göndermez (<a href="privacy-tr.html">gizlilik politikası</a>).</div>
+
+<h2>2. Xiaomi, Redmi, POCO (MIUI / HyperOS)</h2>
+<p>Xiaomi telefonlarda iki ek anahtar var. Açılmazsa kilitli telefonda gelen arama ekranı çıkmayabilir.</p>
+<ol>
+  <li>Uygulama simgesine basılı tutun → <b class="ui">Uygulama bilgisi</b> (ⓘ).</li>
+  <li><b class="ui">Diğer izinler</b>'e girin.</li>
+  <li><b class="ui">Kilit ekranında göster</b> → <b>İzin ver</b>.</li>
+  <li><b class="ui">Arka planda çalışırken açılır pencereleri göster</b> → <b>İzin ver</b>.</li>
+  <li>Önerilir: Uygulama bilgisine dönün → <b class="ui">Pil tasarrufu</b> → <b>Kısıtlama yok</b>.</li>
+</ol>
+
+<h2>3. Samsung (One UI)</h2>
+<ol>
+  <li>Ayarlar → <b class="ui">Uygulamalar</b> → bu uygulama → <b class="ui">Pil</b> → <b>Kısıtlanmamış</b>.</li>
+  <li>Ayarlar → <b class="ui">Uygulamalar</b> → bu uygulama → <b class="ui">Bildirimler</b> → açık olduğundan emin olun.</li>
+</ol>
+
+<h2>4. Oppo, Realme, OnePlus (ColorOS / OxygenOS)</h2>
+<ol>
+  <li>Simgeye basılı tutun → <b class="ui">Uygulama bilgisi</b> → <b class="ui">Pil kullanımı</b> → <b>Arka plan etkinliğine izin ver</b>'i açın (varsa <b>Otomatik başlatma</b>'yı da).</li>
+  <li>Uygulama bilgisi → <b class="ui">Bildirimler</b> → açın; <b>Kilit ekranı</b> bildirimleri de açık olsun.</li>
+</ol>
+
+<h2>5. Diğer markalar (Vivo, Honor, Motorola …)</h2>
+<p>Uygulamanın <b class="ui">Uygulama bilgisi</b> sayfasında <b>pil</b> (“kısıtlama yok” / “arka plan etkinliğine izin ver”), <b>otomatik başlatma</b> (açık) ve <b>kilit ekranı</b> ya da <b>açılır pencere</b> izinlerini (izin ver) arayın. Menü adları markaya ve Android sürümüne göre değişir.</p>
+
+<h2>6. Deneyin</h2>
+<p>Telefonu kilitleyin ve birinden sizi aramasını isteyin. Yeşil <b>YANITLA</b> alanlı büyük ekran çıkmalı. Çıkmazsa <a href="support.html#tr">Yardım</a> sayfasına bakın ve uygulamada <b>Ayarlar → Sorun bildir</b>'i kullanın.</p>
+
+<h2>Eski telefon uygulamasına dönmek</h2>
+<p>Ayarlar → <b class="ui">Uygulamalar</b> → <b class="ui">Varsayılan uygulamalar</b> → <b class="ui">Telefon uygulaması</b> → telefonun kendi uygulamasını seçin. Hiçbir şey silinmez.</p>
+</section>
+</main>
+
+<footer>
+  <p>Questions / Sorular: <a href="mailto:bigclear.destek@gmail.com">bigclear.destek@gmail.com</a></p>
+</footer>
+</div>
+</body>
+</html>

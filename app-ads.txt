@@ -1,0 +1,2 @@
+# app-ads.txt - Big & Clear: Senior Phone (developer: Levent Mert / levottin)
+google.com, pub-8033655214328164, DIRECT, f08c47fec0942fa0
