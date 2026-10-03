@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What’s new</title>
+<meta name="description" content="What changed in each version of the app.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a6a3a'/%3E%3Cpath d='M20 14c3 0 6 7 6 9s-3 3-3 5 6 11 9 13 3-3 5-3 9 3 9 6-4 7-8 7C26 51 13 38 13 22c0-4 4-8 7-8z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fffdf7;--fg:#161616;--muted:#4a4a4a;--card:#f2eee3;--line:#d8d0bc;--link:#0848a0;--accent:#0a6a3a;--accent-fg:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#111;--fg:#f3f3f3;--muted:#c4c4c4;--card:#1d1d1d;--line:#3a3a3a;--link:#9cc9ff;--accent:#3fb872;--accent-fg:#06180d}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.25rem/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+header{border-bottom:2px solid var(--line);padding:20px 0 12px}
+.brand{margin:0;font-weight:800;font-size:1.15rem;color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:6px;font-size:1.05rem}
+h1{font-size:2rem;line-height:1.2;margin:28px 0 10px}
+h2{font-size:1.5rem;line-height:1.25;margin:40px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+h3{font-size:1.25rem;margin:24px 0 4px}
+a{color:var(--link);text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.lead{font-size:1.35rem}
+.muted{color:var(--muted)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:20px 0}
+ul,ol{padding-left:1.4em}li{margin:6px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:700;padding:14px 22px;border-radius:12px;margin:6px 0}
+.lang-split{margin-top:56px;border-top:4px solid var(--accent)}
+footer{border-top:2px solid var(--line);margin-top:48px;padding:20px 0 40px;font-size:1.05rem;color:var(--muted)}
+@media (max-width:480px){body{font-size:1.15rem}h1{font-size:1.7rem}h2{font-size:1.35rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <!-- APP NAME: this is the only place on this page. Change the text below to rename. -->
+  <p class="brand" id="app-name">Big &amp; Clear</p>
+  <script>document.title = document.getElementById('app-name').textContent + ' – ' + document.title;</script>
+  <nav aria-label="Site">
+    <a href="index.html">Home</a>
+    <a href="setup.html">Setup guide</a>
+    <a href="support.html">Help</a>
+    <a href="#tr" lang="tr">Türkçe</a>
+  </nav>
+</header>
+
+<main>
+<section id="en">
+<h1>What’s new</h1>
+<p class="lead">What changed in each version. The newest is at the top.</p>
+<p class="muted">The app is in closed testing on Google Play. The number in brackets is the version code shown in Play.</p>
+
+<h2 id="v70">Version 0.1.0 (70) – 3 October 2026</h2>
+<ul>
+  <li><strong>Practice call: INCOMING and OUTGOING.</strong> Both use your current settings. The incoming one rings, reads the name, vibrates and flashes the way you set it up. The outgoing one asks first or counts down if you turned that on, then the other side “answers”. Change a setting and try again to see the difference. Nobody is called.</li>
+  <li>The four buttons on the call screen (Speaker, Louder, Mute, Keypad) stay two by two even at the Huge text size, so Keypad no longer needs scrolling.</li>
+</ul>
+
+<h2 id="v67">Version 0.1.0 (67) – 3 October 2026</h2>
+<ul>
+  <li>New setting: <strong>Settings → Home screen → “VOICE” button on the home screen</strong>. When it is off, the Keypad button gets wider.</li>
+</ul>
+
+<h2 id="v64">Version 0.1.0 (64) – 2 October 2026</h2>
+<ul>
+  <li><strong>Remove ads</strong> with a one-time payment through Google Play (Settings → Ads); restore it on a new phone.</li>
+  <li>The ad shows for at most 30 seconds at a time, only under the favourites, Recent calls and Contacts lists.</li>
+  <li>Scrolling down makes room: the buttons at the bottom and the tools at the top hide, and come back by themselves.</li>
+  <li>Missed calls: a notification and a number on the app icon; opening the app shows Recent calls.</li>
+  <li>The app goes back to the favourites when nothing is touched for a while (10 to 60 seconds, or off).</li>
+  <li>During a call, <strong>LOUDER</strong> turns the volume straight up to the maximum; with a Bluetooth headset or hearing aid, <strong>SPEAKER</strong> lets you choose where you hear the call.</li>
+  <li>New setting: speaker on for outgoing calls.</li>
+  <li>Buttons adapt to big text: words are never split in the middle.</li>
+</ul>
+
+<h2 id="v46">Version 0.1.0 (46) – 30 September 2026</h2>
+<ul>
+  <li>First test version: big incoming call screen with one-touch answer and decline, the caller’s name read aloud, big favourites, contacts, recent calls and keypad, and an emergency button.</li>
+  <li>Accessibility: light, dark and yellow-on-black colours, keys read aloud, a 3-second countdown before calls, a buzz when the other person answers or hangs up, decline with a message, a shaky-hands setting and a practice call.</li>
+</ul>
+</section>
+
+<section id="tr" lang="tr" class="lang-split">
+<h1>Yenilikler</h1>
+<p class="lead">Her sürümde neler değişti. En yenisi en üstte.</p>
+<p class="muted">Uygulama Google Play'de kapalı testte. Parantez içindeki sayı Play'de görünen sürüm kodudur.</p>
+
+<h2 id="tr-v70">Sürüm 0.1.0 (70) – 3 Ekim 2026</h2>
+<ul>
+  <li><strong>Alıştırma araması: GELEN ve GİDEN.</strong> İkisi de şu anki ayarlarınızla çalışır. Gelen arama ayarladığınız gibi çalar, adı okur, titrer, flaş yakar. Giden arama açtıysanız önce sorar ya da geri sayar, sonra karşı taraf “açar”. Bir ayarı değiştirip yeniden deneyerek farkı görün. Kimse aranmaz.</li>
+  <li>Görüşme ekranındaki dört düğme (Hoparlör, Sesi artır, Sesimi kapat, Tuşlar) Dev yazı boyutunda da ikişerli kalır; Tuşlar için kaydırmak gerekmez.</li>
+</ul>
+
+<h2 id="tr-v67">Sürüm 0.1.0 (67) – 3 Ekim 2026</h2>
+<ul>
+  <li>Yeni ayar: <strong>Ayarlar → Ana ekran → Ana ekranda SESLE BUL düğmesi</strong>. Kapalıyken TUŞLAR düğmesi genişler.</li>
+</ul>
+
+<h2 id="tr-v64">Sürüm 0.1.0 (64) – 2 Ekim 2026</h2>
+<ul>
+  <li>Google Play üzerinden tek seferlik ödemeyle <strong>reklamları kaldırma</strong> (Ayarlar → Reklamlar); yeni telefonda geri yükleme.</li>
+  <li>Reklam bir seferde en çok 30 saniye, yalnız favoriler, Son aramalar ve Rehber listelerinin altında görünür.</li>
+  <li>Aşağı kaydırınca yer açılır: alttaki düğmeler ve üstteki araçlar saklanır, kendiliğinden geri gelir.</li>
+  <li>Cevapsız aramalar: bildirim ve uygulama simgesinde sayı; uygulama açılınca Son aramalar gelir.</li>
+  <li>Bir süre dokunulmazsa uygulama favorilere döner (10-60 saniye ya da kapalı).</li>
+  <li>Görüşmede <strong>SESİ ARTIR</strong> sesi tek dokunuşta en yükseğe çıkarır; Bluetooth kulaklık ya da işitme cihazı varsa <strong>HOPARLÖR</strong> sesi nereden duyacağınızı seçtirir.</li>
+  <li>Yeni ayar: giden aramalarda hoparlör.</li>
+  <li>Düğmeler büyük yazıya uyar: kelimeler ortadan bölünmez.</li>
+</ul>
+
+<h2 id="tr-v46">Sürüm 0.1.0 (46) – 30 Eylül 2026</h2>
+<ul>
+  <li>İlk test sürümü: tek dokunuşla yanıtla/reddet içeren büyük gelen arama ekranı, arayanın adının sesli okunması, büyük favoriler, rehber, son aramalar, tuş takımı ve acil düğmesi.</li>
+  <li>Erişilebilirlik: açık, koyu ve sarı-siyah renkler, tuşları sesli okuma, aramadan önce 3 saniye geri sayım, karşı taraf açınca/kapatınca titreşim, mesajla reddetme, titreyen el ayarı ve alıştırma araması.</li>
+</ul>
+</section>
+</main>
+
+<footer>
+  <p>Levent Mert (levottin – individual developer / bireysel geliştirici) – <a href="mailto:bigclear.destek@gmail.com">bigclear.destek@gmail.com</a></p>
+  <p><a href="index.html">Home</a> · <a href="support.html">Help</a> · <a href="privacy.html">Privacy policy</a> · <a href="privacy-tr.html" lang="tr">Gizlilik politikası</a></p>
+</footer>
+</div>
+</body>
+</html>
